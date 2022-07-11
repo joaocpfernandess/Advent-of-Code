@@ -4,5 +4,5 @@ All solutions were coded in Python3
 
 Completed challenges: \
 2021 - Up to day 14 \
-2020 - Up to day 20
+2020 - Up to day 23.1
 
