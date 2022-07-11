@@ -54,10 +54,8 @@ def common_allergens(allergens):
 allergens, ingredients = file_reader(file)
 new_aller = common_allergens(allergens)
 can_contain = set([i for l in new_aller for i in new_aller[l]])
-n_not_contain = 0
-for ings in ingredients:
-    if ings not in can_contain:
-        n_not_contain += ingredients[ings]
+canon_ing_list = ''
+for allergen in sorted(new_aller):
+    canon_ing_list += new_aller[allergen][0] + ','
 
-
-print(f'FINAL ANSWER: {n_not_contain}')
+print(f'FINAL ANSWER: {canon_ing_list[:-1]}')
